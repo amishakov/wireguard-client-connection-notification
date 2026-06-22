@@ -8,11 +8,20 @@ Follow these steps to set up the notification service on your WireGuard server.
 
 ### 1. Clone the Repository
 
-Start by cloning this repository onto your server:
+Start by getting the required files onto your server with `curl`:
 
 ```bash
-git clone https://github.com/alfiosalanitri/wireguard-client-connection-notification.git
+curl -L -O https://raw.githubusercontent.com/alfiosalanitri/wireguard-client-connection-notification/main/.config-example
+curl -L -O https://raw.githubusercontent.com/alfiosalanitri/wireguard-client-connection-notification/main/wg-clients-guardian.sh
 ```
+
+Alternatively use `wget`:
+
+```bash
+wget https://raw.githubusercontent.com/alfiosalanitri/wireguard-client-connection-notification/main/.config-example
+wget https://raw.githubusercontent.com/alfiosalanitri/wireguard-client-connection-notification/main/wg-clients-guardian.sh
+```
+
 
 ### 2. Configure the Service
 
